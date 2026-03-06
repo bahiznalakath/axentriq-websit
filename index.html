@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Axentriq Info Solutions - Innovating Business. Securing the Future." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Main Style -->
+  <link rel="stylesheet" href="/src/style.css" />
+  <title>Axentriq Info Solutions | Secure Corporate Solutions</title>
+
+  <style>
+    /* Home Page Hero Section (Removed old hero classes) */
+
+    /* Services Section */
+    .services {
+      padding: var(--padding-section);
+      background-color: var(--color-gray-light);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: var(--color-white);
+      padding: 3rem 2rem;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      transition: var(--transition-smooth);
+      border-top: 3px solid transparent;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+      border-top-color: var(--color-gold-solid);
+    }
+
+    .service-icon {
+      font-size: 3.5rem;
+      color: var(--color-gold-solid);
+      margin-bottom: 1.5rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Why Choose Us */
+    .why-us {
+      padding: var(--padding-section);
+      background-color: var(--color-white);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      text-align: center;
+    }
+
+    .feature-item h4 {
+      margin: 1.5rem 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .feature-item p {
+      font-size: 0.95rem;
+    }
+
+    .feature-icon-wrapper {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      background-color: var(--color-gray-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: var(--color-gold-solid);
+      transition: var(--transition-smooth);
+    }
+
+    .feature-item:hover .feature-icon-wrapper {
+      background-color: var(--color-charcoal-deep);
+      color: var(--color-gold-start);
+    }
+
+    /* Call to Action */
+    .cta-section {
+      padding: 6rem 5%;
+      background-color: var(--color-charcoal-deep);
+      text-align: center;
+      color: var(--color-white);
+    }
+
+    .cta-section h2 {
+      color: var(--color-white);
+      margin-bottom: 2rem;
+    }
+
+    .cta-section p {
+      color: #cccccc;
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="/" class="logo"><img src="/logo.png" alt="Axentriq Logo" class="brand-logo"></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#product">Product</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Carousel Section -->
+    <section id="home" class="hero-carousel-section">
+      <div class="carousel-container">
+
+        <!-- Slide 1 -->
+        <div class="carousel-slide active">
+          <div class="carousel-content fade-up">
+            <h1 class="gold-text heading-large">WE HAVE TOP IT EXPERTS</h1>
+            <h2 class="subheading text-white">Transform Your Ideas into Digital Reality</h2>
+            <p class="description">Our team of experienced developers and technology experts help businesses turn
+              innovative ideas into powerful digital products.</p>
+          </div>
+          <div class="carousel-image fade-up" style="transition-delay: 0.2s;">
+            <img src="/hero_v3_slide1_1772816317958.png" alt="IT Experts Development Team">
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+          <div class="carousel-content fade-up">
+            <h1 class="gold-text heading-large">Custom Web & Mobile App Development</h1>
+            <p class="description">We build high-performance websites and mobile applications using the latest
+              technologies to help businesses grow in the digital world.</p>
+          </div>
+          <div class="carousel-image fade-up" style="transition-delay: 0.2s;">
+            <img src="/hero_v3_slide2_1772816336084.png" alt="Mobile App and Web Development">
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+          <div class="carousel-content fade-up">
+            <h1 class="gold-text heading-large">E-Commerce Development Solutions</h1>
+            <p class="description">From selecting the right platform to building scalable online stores, we help
+              businesses launch and manage powerful e-commerce websites.</p>
+          </div>
+          <div class="carousel-image fade-up" style="transition-delay: 0.2s;">
+            <img src="/hero_v3_slide3_1772816356661.png" alt="E-Commerce Solutions">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Navigation -->
+      <button class="carousel-control prev" aria-label="Previous Slide">❮</button>
+      <button class="carousel-control next" aria-label="Next Slide">❯</button>
+
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </section>
+
+    <!-- Services Section
+    <section class="services">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2 class="gold-text">Bridging Critical Needs</h2>
+          <p>Our solutions are designed to bridge three critical needs of modern organizations.</p>
+        </div>
+
+        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+          <div class="service-card fade-up">
+            <div class="service-icon">📊</div>
+            <h3>Operational Efficiency</h3>
+            <p>Smart business management software.</p>
+          </div>
+
+          <div class="service-card fade-up" style="transition-delay: 0.1s;">
+            <div class="service-icon">📈</div>
+            <h3>Digital Growth</h3>
+            <p>Scalable platforms for evolving business models.</p>
+          </div>
+
+          <div class="service-card fade-up" style="transition-delay: 0.2s;">
+            <div class="service-icon">🛡️</div>
+            <h3>Cyber Protection</h3>
+            <p>Security embedded into every layer of technology.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Integrated Approach -->
+    <section class="why-us" style="background-color: var(--color-white);">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>An Integrated <span class="gold-text">Approach</span></h2>
+          <p>In today's competitive market, a product must do more than function — it must perform, protect, and scale.
+            That's why our approach integrates:</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item fade-up">
+            <div class="feature-icon-wrapper">✓</div>
+            <h4>Business Management</h4>
+            <p>Software solutions tailored to your operational needs.</p>
+          </div>
+          <div class="feature-item fade-up" style="transition-delay: 0.1s;">
+            <div class="feature-icon-wrapper">📱</div>
+            <h4>Secure Apps</h4>
+            <p>Custom web & mobile application development.</p>
+          </div>
+          <div class="feature-item fade-up" style="transition-delay: 0.2s;">
+            <div class="feature-icon-wrapper">🛡️</div>
+            <h4>Security Architecture</h4>
+            <p>Cybersecurity-driven system architecture.</p>
+          </div>
+          <div class="feature-item fade-up" style="transition-delay: 0.3s;">
+            <div class="feature-icon-wrapper">🔒</div>
+            <h4>Data Protection</h4>
+            <p>Stringent access control and data security policies.</p>
+          </div>
+          <div class="feature-item fade-up" style="transition-delay: 0.4s;">
+            <div class="feature-icon-wrapper">⚡</div>
+            <h4>Digital Workflows</h4>
+            <p>Custom-built optimizations to streamline enterprise actions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commitment -->
+    <section class="services" style="background-color: var(--color-gray-light);">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>Our <span class="gold-text">Commitment</span></h2>
+          <p>Our product presence reflects our dedication to core pillars of success. Every solution we develop is
+            aligned with real business challenges and future-ready technology standards.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item fade-up">
+            <h4 class="gold-text">📌 Reliability</h4>
+          </div>
+          <div class="feature-item fade-up" style="transition-delay: 0.1s;">
+            <h4 class="gold-text">📌 Innovation</h4>
+          </div>
+          <div class="feature-item fade-up" style="transition-delay: 0.2s;">
+            <h4 class="gold-text">📌 Security</h4>
+          </div>
+          <div class="feature-item fade-up" style="transition-delay: 0.3s;">
+            <h4 class="gold-text">📌 Business Value</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta-section">
+      <div class="container fade-up">
+        <h2>Ready to <span class="gold-text">Innovate?</span></h2>
+        <p>Partner with Axentriq Info Solutions today and secure your enterprise's digital future with sophisticated,
+          robust technologies.</p>
+        <a href="/contact.html" class="btn btn-primary">Initiate Project</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="why-us" style="background-color: var(--color-white); padding-top: 8rem;">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>About <span class="gold-text">Our Company</span></h2>
+          <p>We are architects of the digital future, securing and scaling enterprises worldwide.</p>
+        </div>
+
+        <div
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; margin-top: 3rem;">
+          <div class="fade-up">
+            <h3 class="gold-text">Our Mission</h3>
+            <p>To empower global enterprises by delivering flawless, uncompromised, and secure software solutions that
+              catalyze business growth and operational excellence.</p>
+          </div>
+          <div class="fade-up" style="transition-delay: 0.2s;">
+            <h3 class="gold-text">Our Vision</h3>
+            <p>To be the globally recognized vanguard in creating secure digital infrastructures, defining the standard
+              for premium corporate technology solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section" style="background-color: var(--color-gray-light); padding-top: 8rem;">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>Meet The <span class="gold-text">Leadership</span></h2>
+          <p>The leadership team driving innovation, technology, and growth at Axentriq Info Solutions.</p>
+        </div>
+
+        <div class="team-grid">
+
+          <!-- Team Member 1 -->
+          <div class="team-card fade-up">
+            <div class="team-image-wrapper">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D5603AQG-6IaphgtIlw/profile-displayphoto-scale_400_400/B56ZyY8LBEHQAg-/0/1772092437782?e=1774483200&v=beta&t=QjOVgY4zVsuJI0IeoxDL-A151SGZmJTHAHRbH0xfjCY"
+                alt="Sooraj Sadasivan" class="team-image">
+              <a href="https://www.linkedin.com/in/sooraj-sadasivan-2504b3144/" target="_blank" class="team-social"
+                aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+            </div>
+            <div class="team-info">
+              <h3>Sooraj Sadasivan</h3>
+              <p class="team-role gold-text">Managing Director (MD)</p>
+              <p class="team-desc">Leading the strategic direction and long-term vision of Axentriq Info Solutions while
+                driving innovation and business growth.</p>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="team-card fade-up" style="transition-delay: 0.1s;">
+            <div class="team-image-wrapper">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D5603AQGqz4zYZPodQw/profile-displayphoto-scale_400_400/B56ZzD6f5YKMAg-/0/1772813419305?e=1774483200&v=beta&t=qbuXVOi4Q0CTZXRBaHEyWTdaK9lP4IV9MMUE_jx-Rww"
+                alt="Jees Mathew" class="team-image">
+              <a href="https://www.linkedin.com/in/jees-mathew-50617122b/" target="_blank" class="team-social"
+                aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+            </div>
+            <div class="team-info">
+              <h3>Jees Mathew</h3>
+              <p class="team-role gold-text">Executive Director</p>
+              <p class="team-desc">Overseeing executive operations and guiding the company’s expansion strategies and
+                leadership initiatives.</p>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="team-card fade-up" style="transition-delay: 0.2s;">
+            <div class="team-image-wrapper">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D03AQEj8yKXu6V9Qg/profile-displayphoto-scale_400_400/B4DZybSyjeGUAg-/0/1772131922082?e=1774483200&v=beta&t=Nbe_oX_Biq6GuqMuyaZ8L-RKHqsbi1SIoUKFzbqCkqQ"
+                alt="Muhammed Bahiz" class="team-image">
+              <a href="https://www.linkedin.com/in/muhammed-bahiz-n-789a01228/" target="_blank" class="team-social"
+                aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+            </div>
+            <div class="team-info">
+              <h3>Muhammed Bahiz</h3>
+              <p class="team-role gold-text">Chief Executive Officer (CEO)</p>
+              <p class="team-desc">Driving company operations, strategic planning, and ensuring operational excellence
+                across all business activities.</p>
+            </div>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div class="team-card fade-up" style="transition-delay: 0.3s;">
+            <div class="team-image-wrapper">
+              <div class="team-image-placeholder"
+                style="font-size: 0.8rem; color: var(--color-gray-medium); text-align: center; padding: 1rem;">
+                [Upload Profile Photo]
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Mashoque</h3>
+              <p class="team-role gold-text">General Manager (GM)</p>
+              <p class="team-desc">Managing day-to-day operations and ensuring efficient coordination across departments
+                and projects.</p>
+            </div>
+          </div>
+
+          <!-- Team Member 5 -->
+          <div class="team-card fade-up" style="transition-delay: 0.4s;">
+            <div class="team-image-wrapper">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D5603AQEpPOuFNLMbSA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1683551034332?e=1774483200&v=beta&t=VJfpeN85U6FC_RSwhapnUJ5dxo3jwnKG1ojNxxyZxUU"
+                alt="Shyam ES" class="team-image">
+              <a href="https://www.linkedin.com/in/shyam-es-09a29b251/" target="_blank" class="team-social"
+                aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+            </div>
+            <div class="team-info">
+              <h3>Shyam ES</h3>
+              <p class="team-role gold-text">Head of Research & Development (R&D)</p>
+              <p class="team-desc">Leading research, innovation, and product development initiatives to build advanced
+                technology solutions.</p>
+            </div>
+          </div>
+
+          <!-- Team Member 6 -->
+          <div class="team-card fade-up" style="transition-delay: 0.5s;">
+            <div class="team-image-wrapper">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D5603AQHQrKdiNJ3tYw/profile-displayphoto-scale_400_400/B56ZxrdrnQH8Ag-/0/1771329526483?e=1774483200&v=beta&t=p_jM0vMZ2fhCQr3dXv8QNS-C8k37zlUMLbnRUzQbaKs"
+                alt="Hareesh Acharya" class="team-image">
+              <a href="https://www.linkedin.com/in/hareesh-v-h/" target="_blank" class="team-social"
+                aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+            </div>
+            <div class="team-info">
+              <h3>Hareesh Acharya</h3>
+              <p class="team-role gold-text">Director</p>
+              <p class="team-desc">Providing strategic leadership and guidance to strengthen partnerships, business
+                growth, and innovation.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section (Expanded) -->
+    <section id="services" class="services-list" style="background-color: var(--color-white); padding-top: 8rem;">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>Premium <span class="gold-text">Digital Services</span></h2>
+          <p>Architecting robust, secure, and infinitely scalable solutions for the modern enterprise.</p>
+        </div>
+
+        <!-- Service 1 -->
+        <div class="service-row fade-up"
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+          <div class="service-content">
+            <h3 style="font-size: 2rem;">Business Management <span class="gold-text">Systems</span></h3>
+            <p>Comprehensive Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM)
+              tools designed specifically to streamline your corporate workflow, maximize operational
+              efficiency, and drive data-backed insights.</p>
+          </div>
+          <div class="service-visual"
+            style="width: 100%; height: 350px; background: linear-gradient(135deg, var(--color-gray-light), #e0e0e0); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 5.5rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);">
+            📊
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-row fade-up"
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+          <div class="service-visual"
+            style="width: 100%; height: 350px; background: linear-gradient(135deg, var(--color-gray-light), #e0e0e0); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 5.5rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);">
+            🛡️
+          </div>
+          <div class="service-content">
+            <h3 style="font-size: 2rem;">Cybersecurity <span class="gold-text">Solutions</span></h3>
+            <p>In a world of rapidly evolving threats, our cybersecurity architectures are built around a
+              Zero-Trust framework. We audit, fortify, and monitor your enterprise systems to ensure
+              ultimate data sovereignty and protection.</p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-row fade-up"
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+          <div class="service-content">
+            <h3 style="font-size: 2rem;">Mobile & Web App <span class="gold-text">Development</span></h3>
+            <p>We deliver sleek, high-performance web platforms and mobile applications. Every interface is
+              meticulously crafted to reflect luxury aesthetics while offering blazing-fast, secure, and
+              responsive functionality.</p>
+          </div>
+          <div class="service-visual"
+            style="width: 100%; height: 350px; background: linear-gradient(135deg, var(--color-gray-light), #e0e0e0); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 5.5rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);">
+            📱
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-row fade-up"
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+          <div class="service-visual"
+            style="width: 100%; height: 350px; background: linear-gradient(135deg, var(--color-gray-light), #e0e0e0); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 5.5rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);">
+            ☁️
+          </div>
+          <div class="service-content">
+            <h3 style="font-size: 2rem;">Cloud & Infrastructure <span class="gold-text">Services</span></h3>
+            <p>Transform how your business operates by moving to a secure, highly available cloud
+              environment. We design cloud-native systems that guarantee uptime, speed, and massive
+              horizontal scaling natively.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" class="product-section"
+      style="background-color: var(--color-gray-light); padding-top: 8rem; padding-bottom: 8rem;">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>Our <span class="gold-text">Product</span></h2>
+          <p>Discover our comprehensive ecosystem designed for organizational excellence.</p>
+        </div>
+
+        <div class="product-card fade-up">
+          <div class="product-visual">
+            <div class="product-image-placeholder">
+              <span>[Upload HRMS Dashboard Screenshot]</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">HRMS <span class="gold-text">(Human Resource Management System)</span></h3>
+            <p class="product-description">
+              Our HRMS platform helps businesses manage employees, payroll, attendance, and HR operations from a single
+              centralized system. The platform is designed to simplify HR workflows, reduce manual tasks, and improve
+              organizational efficiency.
+            </p>
+
+            <div class="product-features">
+              <ul class="feature-checklist">
+                <li><span class="check-icon">✔</span> Employee Management</li>
+                <li><span class="check-icon">✔</span> Attendance & Leave Tracking</li>
+                <li><span class="check-icon">✔</span> Payroll Management</li>
+                <li><span class="check-icon">✔</span> Performance Monitoring</li>
+                <li><span class="check-icon">✔</span> HR Reports & Analytics</li>
+                <li><span class="check-icon">✔</span> Secure Employee Portal</li>
+              </ul>
+            </div>
+
+            <div class="product-why">
+              <h4 class="gold-text">Why Choose Our HRMS:</h4>
+              <p>Our Human Resource Management System is designed to streamline HR processes and improve productivity.
+                From employee onboarding to payroll processing, everything can be managed easily through a smart and
+                secure dashboard.</p>
+            </div>
+
+            <div class="product-actions">
+              <a href="#contact" class="btn btn-primary">Request Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section (Temporarily Hidden)
+    <section id="portfolio" class="portfolio-section"
+      style="background-color: var(--color-white); padding-top: 8rem; padding-bottom: 8rem;">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>Our <span class="gold-text">Work</span></h2>
+          <p>Explore case studies defining modern enterprise architecture and security.</p>
+        </div>
+
+        <div class="case-study fade-up"
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 6rem; align-items: center;">
+          <div class="case-study-visual"
+            style="width: 100%; height: 400px; background-color: var(--color-charcoal-deep); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--color-white);">
+            <span style="font-weight: 600;">Global Finance Dashboard</span>
+          </div>
+          <div class="case-study-content">
+            <h3 style="font-size: 2rem; margin-bottom: 1rem;"><span class="gold-text">OmniBank</span> Core Framework
+            </h3>
+            <p>We engineered a highly resilient, real-time trading dashboard for a leading global financial institution.
+              Focused heavily on reducing latency while integrating multi-factor authentication and zero-trust data
+              pathways.</p>
+            <a href="#" class="btn btn-outline" style="margin-top: 1.5rem;">Read Full Case Study</a>
+          </div>
+        </div>
+
+        <div class="case-study fade-up"
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 6rem; align-items: center;">
+          <div class="case-study-content">
+            <h3 style="font-size: 2rem; margin-bottom: 1rem;"><span class="gold-text">Nexus Healthcare</span> Data
+              System</h3>
+            <p>Developed a HIPAA-compliant, completely decentralized electronic medical records (EMR) system. Built to
+              handle billions of read/write requests securely with 99.999% uptime via horizontal database sharding.</p>
+            <a href="#" class="btn btn-outline" style="margin-top: 1.5rem;">Read Full Case Study</a>
+          </div>
+          <div class="case-study-visual"
+            style="width: 100%; height: 400px; background-color: var(--color-charcoal-deep); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--color-white);">
+            <span style="font-weight: 600;">Healthcare EMR Visual</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section"
+      style="background-color: var(--color-gray-light); padding-top: 8rem; padding-bottom: 8rem;">
+      <div class="container contact-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem;">
+
+        <div class="contact-info fade-up">
+          <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Let's build something <span
+              class="gold-text">powerful</span> together.</h2>
+          <p style="margin-bottom: 3rem;">We partner with visionary enterprises to execute sophisticated technological
+            architectures. Contact us to schedule a strategic consultation.</p>
+
+          <div style="margin-bottom: 2rem; display: flex; align-items: flex-start; gap: 1rem;">
+            <svg viewBox="0 0 24 24" fill="var(--color-gold-solid)"
+              style="width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px;">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+            <div>
+              <h4 style="color: var(--color-gold-solid); font-size: 1.1rem; margin-bottom: 0.25rem;">Location</h4>
+              <p style="color: var(--color-matte-black); font-weight: 500; margin-bottom: 0;">Ernakulam, Kerala, India
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 2rem; display: flex; align-items: flex-start; gap: 1rem;">
+            <svg viewBox="0 0 24 24" fill="var(--color-gold-solid)"
+              style="width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px;">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44z" />
+            </svg>
+            <div>
+              <h4 style="color: var(--color-gold-solid); font-size: 1.1rem; margin-bottom: 0.25rem;">Email</h4>
+              <p style="color: var(--color-matte-black); font-weight: 500; margin-bottom: 0;"><a
+                  href="mailto:axentriqsolutions@gmail.com" style="color: inherit;">axentriqsolutions@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 2rem; display: flex; align-items: flex-start; gap: 1rem;">
+            <svg viewBox="0 0 24 24" fill="var(--color-gold-solid)"
+              style="width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px;">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            <div>
+              <h4 style="color: var(--color-gold-solid); font-size: 1.1rem; margin-bottom: 0.25rem;">Phone</h4>
+              <p style="color: var(--color-matte-black); font-weight: 500; margin-bottom: 0;"><a
+                  href="tel:+91 9400467800" style="color: inherit;">+91 94004 67800</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper fade-up" style="transition-delay: 0.2s;">
+          <form
+            style="background-color: var(--color-gray-light); padding: 3rem; border-radius: 4px; border-top: 3px solid var(--color-gold-solid);"
+            onsubmit="event.preventDefault(); alert('Form submitted successfully!');">
+            <div style="margin-bottom: 1.5rem;">
+              <label
+                style="display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; color: var(--color-charcoal-deep);"
+                for="name">Full Name</label>
+              <input
+                style="width: 100%; padding: 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px; font-family: var(--font-primary); font-size: 1rem; background-color: var(--color-white);"
+                type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <label
+                style="display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; color: var(--color-charcoal-deep);"
+                for="email">Corporate Email</label>
+              <input
+                style="width: 100%; padding: 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px; font-family: var(--font-primary); font-size: 1rem; background-color: var(--color-white);"
+                type="email" id="email" name="email" required placeholder="john@company.com">
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <label
+                style="display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; color: var(--color-charcoal-deep);"
+                for="subject">Subject</label>
+              <input
+                style="width: 100%; padding: 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px; font-family: var(--font-primary); font-size: 1rem; background-color: var(--color-white);"
+                type="text" id="subject" name="subject" required placeholder="Partnership Inquiry">
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <label
+                style="display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; color: var(--color-charcoal-deep);"
+                for="message">Message</label>
+              <textarea
+                style="width: 100%; padding: 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px; font-family: var(--font-primary); font-size: 1rem; background-color: var(--color-white); resize: vertical; min-height: 150px;"
+                id="message" name="message" required placeholder="How can we assist your enterprise?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4 class="logo"><img src="/footer-logo.png" alt="Axentriq Logo" class="brand-logo footer-logo"></h4>
+          <p>Innovating Business. Securing the Future.</p>
+          <p style="margin-top: 1rem;">Providing premium, secure digital solutions for modern enterprises globally.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Business Management</a></li>
+            <li><a href="#services">Cybersecurity</a></li>
+            <li><a href="#services">Mobile & Web App</a></li>
+            <li><a href="#services">Cloud Infrastructure</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44z" />
+              </svg>
+              <a href="mailto:contact@axentriq.com">contact@axentriq.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+              </svg>
+              <a href="tel:+917025175744">+91 70251 75744</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
+              <span>Ernakulam, Kerala, India</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Axentriq Info Solutions. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/p/DVN_eLPk-F9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069v-2.163zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7432739367770603520" target="_blank"
+            rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
